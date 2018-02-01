@@ -1,0 +1,57 @@
+header h1 {
+	background-color: yellow;
+	text-align: right;
+}
+
+nav {
+	background-color: green;
+}
+
+#content ul, nav ul {
+	list-style-type: none;
+}
+
+#content {
+	background-color: #606060;
+}
+
+#wrap {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+
+aside {
+	background-color: #ffffff;
+}
+
+body {
+	background-color: #999999;
+}
+
+footer {
+	background-color: green;
+	padding: 5px 10px;
+}
