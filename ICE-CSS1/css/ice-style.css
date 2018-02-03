@@ -1,3 +1,7 @@
+html {
+	background-color: darkgrey;
+}
+
 header h1 {
 	background-color: yellow;
 	text-align: right;
@@ -11,9 +15,9 @@ nav {
 	list-style-type: none;
 }
 
-#content {
+/*#content {
 	background-color: #606060;
-}
+}*/
 
 #wrap {
 	width: 80%;
@@ -27,11 +31,13 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: black;
+
 }
 
-nav li {
+nav ul li {
 	float: left;
+	background-color: black;
+	display: inline;
 }
 
 nav li a {
