@@ -1,0 +1,29 @@
+@media only screen and (min-width: 650px) {
+
+	.top-nav ul{
+		text-align: center;
+	}
+
+	.top-nav ul li, .menu-icon{
+		border-top: 1px solid #F54320; /*CHANGE*/
+		display: inline-block;
+	}
+
+	.item3, .item4{
+		display: inline-block;
+		width: 45%;
+		margin: 0 2%;
+	}
+	
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+	.photo-grid{
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+}
+
+/*line-height*/
