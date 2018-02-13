@@ -19,7 +19,6 @@
 	}
 
 	.c{
-		box-sizing: border-box;
 		grid-column: 1 / 2;
 		grid-row-start: 3;
 		margin-left: 4%;
@@ -27,7 +26,6 @@
 	}
 
 	.d{
-		box-sizing: border-box;
 		grid-column: 2 / 3;
 		grid-row-start: 3;
 		margin-right: 2%;
@@ -74,13 +72,15 @@
 	.c{
 		grid-column: 1 / 2;
 		grid-row-start: 2;
-		margin-left: 4%;
+		box-sizing: border-box;
+		padding: 2%;
 	}
 
 	.d{
 		grid-column: 2 / 3;
 		grid-row-start: 2;
-		margin-right: 2%;
+		box-sizing: border-box;
+		padding: 2%;
 	}
 
 }
