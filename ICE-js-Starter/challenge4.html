@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 4</title>
+    <style>
+    .errormsg { 
+        font-family:"Courier";
+    	color:red;
+    	display:none; } 
+    </style>
+    
+    <script type="text/javascript">
+    function checkForm(){
+      var x = document.getElementById("fullname").value;
+      var y = document.getElementById("streetaddr").value;
+
+      if (x == false && y == false){
+        var z1 = document.getElementById("nameerrormsg");
+        var z2 = document.getElementById("addrerrormsg");
+        z1.style.display = "block";
+        z2.style.display = "block";
+        return false;
+      }
+
+      else if (x == true && y == false){
+        var z1 = document.getElementById("nameerrormsg");
+        var z2 = document.getElementById("addrerrormsg");
+        z1.style.display = "none";
+        z2.style.display = "block";
+        return false;
+      }
+
+      else if (x == false && y == true){
+        var z1 = document.getElementById("nameerrormsg");
+        var z2 = document.getElementById("addrerrormsg");
+        z1.style.display = "block";
+        z2.style.display = "none";
+        return false;
+      }
+      
+      else{
+        var z1 = document.getElementById("nameerrormsg");
+        var z2 = document.getElementById("addrerrormsg");
+        z1.style.display = "none";
+        z2.style.display = "none";
+        return true;
+      }
+    	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+    }  
+    </script>
+</head>
+<body>
+    <h1>Challenge 4</h1>
+	<form action="challenge5.html" onsubmit="return checkForm()">
+        <fieldset>
+        <legend>Personal details</legend>
+          <label for="fullname">Full name: </label>
+            <input type="text" name="fullname" id="fullname"><br/>
+            <p class="errormsg" id="nameerrormsg">Please enter your name above!</p>
+
+          <label for ="streetaddr"></label>
+            Street Address:
+            <input type="text" name="streetaddr" id="streetaddr">
+            <p class="errormsg" id="addrerrormsg">Please enter your street address!</p>
+        </fieldset>
+        <input type="submit" value="Submit it!"> 
+    </form>
+</body>
+</html>
