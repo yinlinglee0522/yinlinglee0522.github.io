@@ -12,42 +12,65 @@
     
     <script type="text/javascript">
     function checkForm(){
-      var x = document.getElementById("fullname").value;
-      var y = document.getElementById("streetaddr").value;
 
-      if (x == false && y == false){
-        var z1 = document.getElementById("nameerrormsg");
-        var z2 = document.getElementById("addrerrormsg");
-        z1.style.display = "block";
-        z2.style.display = "block";
-        return false;
-      }
+        var fullname=document.getElementById('fullname');
+        var streetAddress=document.getElementById('streetaddr');
+        var nameError=document.getElementById('nameerrormsg');
+        var addressError=document.getElementById('addrerrormsg');
 
-      else if (x == true && y == false){
-        var z1 = document.getElementById("nameerrormsg");
-        var z2 = document.getElementById("addrerrormsg");
-        z1.style.display = "none";
-        z2.style.display = "block";
-        return false;
-      }
-
-      else if (x == false && y == true){
-        var z1 = document.getElementById("nameerrormsg");
-        var z2 = document.getElementById("addrerrormsg");
-        z1.style.display = "block";
-        z2.style.display = "none";
-        return false;
-      }
-      
-      else{
-        var z1 = document.getElementById("nameerrormsg");
-        var z2 = document.getElementById("addrerrormsg");
-        z1.style.display = "none";
-        z2.style.display = "none";
-        return true;
-      }
-    	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+        var counter=0;
+        if (!fullname.value){
+            nameError.style.display='block';
+            counter+=1;
+        }else{
+            nameError.style.display='none';
+        }
+        if (!streetAddress.value){
+            addressError.style.display='block';
+            counter+=1;
+        }else{
+            addressError.style.display='none';
+        }
+        if (counter>0){
+            return false;
+        }      
     }  
+    </script>
+
+<!--       var x = document.getElementById("fullname").value;
+      var y = document.getElementById("streetaddr").value;
+      // if (x == false && y == false){
+      //   var z1 = document.getElementById("nameerrormsg");
+      //   var z2 = document.getElementById("addrerrormsg");
+      //   z1.style.display = "block";
+      //   z2.style.display = "block";
+      //   return false;
+      // }
+
+      // else if (x == true && y == false){
+      //   var z1 = document.getElementById("nameerrormsg");
+      //   var z2 = document.getElementById("addrerrormsg");
+      //   z1.style.display = "none";
+      //   z2.style.display = "block";
+      //   return false;
+      // }
+
+      // else if (x == false && y == true){
+      //   var z1 = document.getElementById("nameerrormsg");
+      //   var z2 = document.getElementById("addrerrormsg");
+      //   z1.style.display = "block";
+      //   z2.style.display = "none";
+      //   return false;
+      // }
+      
+      // else{
+      //   var z1 = document.getElementById("nameerrormsg");
+      //   var z2 = document.getElementById("addrerrormsg");
+      //   z1.style.display = "none";
+      //   z2.style.display = "none";
+      //   return true;
+      }
+    	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank. --> 
     </script>
 </head>
 <body>
