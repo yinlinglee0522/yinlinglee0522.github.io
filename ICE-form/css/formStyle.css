@@ -6,6 +6,13 @@ html, body, h1, form, fieldset, legend, ol, li {
 
 h2 {
 	text-align: center;
+	font-family: Source Sans Pro, "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+
+h4 {
+	font-family: Source Sans Pro, "Times New Roman", Times, serif;
+	font-weight: bold;
 }
 
 body {
