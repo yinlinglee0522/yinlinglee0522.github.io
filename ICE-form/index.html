@@ -14,7 +14,6 @@
 		<h2 id="title"> Your Dream Job Starts Here... </h2>
 		<form name="application" action="" method="post">
 
-
       <h4><u>Basic Information</u></h4>
    <div>
 	</a>
@@ -96,8 +95,6 @@
     
       <div>
       <h4><u>Position</u></h4>
-   
-
     
         <fieldset>
 			<legend>Type of Work:</legend>
@@ -154,7 +151,8 @@
 
 			Expected Start Date: <input type="date" name="startdate" class="form-control"><br>
 			
-			Expected Salary: $<input type="range" name="salary" min="40" max="200" step="5" value="100" onchange="updateSalary(this)"><br/><span id="salary"></span>
+			Expected Salary: $<span id="demo"></span>
+			<input type="range" name="salary" min="40" max="200" step="5" value="100" onchange="updateSalary(this)" class="slider" id="range"><br/><!-- <span id="salary"></span> -->
 			<br>
 
 			<label>Personal Website/Portfolio: <input type="url" name="website" placeholder="www.mywebsite.com"></label><br>
@@ -167,6 +165,18 @@
 
 	</form>
 
+<!-- 	Display the current value of the slide bar -->
+ 	<script>
+ 		// Display the default slider value
+ 	    var slider = document.getElementById("range");
+		var output = document.getElementById("demo");
+		output.innerHTML = slider.value; 
+			
+		// Update the current slider value (each time you drag the slider handle)
+		slider.oninput = function() {
+    		output.innerHTML = this.value;
+		}
+ 	</script>
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
