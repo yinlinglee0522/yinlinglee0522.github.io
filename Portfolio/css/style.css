@@ -137,10 +137,10 @@ footer a{
 
 /*-----HOMEPAGE-----*/
 .main-content-home{
-	margin-top: 250px;
+	margin-top: 240px;
 }
 
-.home-banner{
+.home-text{
 	color: #FFFFFF;
 	margin: auto;
 	padding: 0px 3em;
@@ -156,6 +156,11 @@ footer a{
 }
 
 /*-----ABOUT PAGE ------*/
+.about-text{
+	margin: auto;
+	padding: 0px 15% 10% 15%;
+	line-height: 150%;
+}
 
 /*-----IMAGES PAGE ------*/
 .main-content-crafts{

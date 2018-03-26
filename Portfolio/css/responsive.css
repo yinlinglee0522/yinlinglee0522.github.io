@@ -8,20 +8,21 @@
     cursor: pointer;
 }
 
-.menu {
+.top-nav {
     position: relative;
     display: inline-block;
     float:right;
+    padding-right: 15%;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #AAAAAA;
+    background-color: #FFFFFF;
     min-width: 160px;
-    box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
     z-index: 1;
-    right: 0;
+    right: 57%;
 }
 
 .dropdown-content a {
@@ -58,7 +59,7 @@
 		display: inline-block;
 	}
 
-	.home-banner{
+	.home-text{
 		font-size: 120%;
 	}
 
@@ -89,8 +90,8 @@
 @media only screen and (min-width: 1200px){
 
 	header{
-		padding: 0px 10% 5px 10%;
-		width: 80%;
+		padding: 0px 15% 5px 15%;
+		width: 70%;
 	}
 
 	button {
@@ -113,7 +114,7 @@
 		float: left;
 	}
 
-	.home-banner{
+	.home-text{
 		font-size: 140%;
 	}
 
