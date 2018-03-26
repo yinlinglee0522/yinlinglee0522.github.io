@@ -1,0 +1,188 @@
+/*-----MAIN-----*/
+html {
+  box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+}
+
+html, body, header, footer{
+    background-color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+p{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	letter-spacing: .3px;
+	font-size: 1em;
+}
+h1{ 
+	font-size: 2.75em;
+}
+h2{
+	font-size: 2em;
+}
+h3{
+	font-size: 1.5em;
+}
+h4{
+	font-size: 1.25em;
+}
+h5{
+	font-size: .83em;
+}
+h6{
+	font-size: .75em;
+}
+.main-content{
+	flex: 1 0 auto;
+	margin-top: 110px;
+}
+.about, .work, .crafts, .contact{
+	margin: auto;
+	padding-right: 3%;
+	padding-left: 3%;
+}
+
+/*-----HEADER & NAVIGATION-----*/
+header{
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: .75px;
+	font-weight: 300;
+    position: fixed;
+    width: 100%;
+}
+/*mobile-first*/
+.top-nav ul{
+	list-style-type: none;
+	padding: 0;
+	background-color: #FFFFFF; 
+	margin: 0;
+	display: block;
+}
+.top-nav ul li{
+	border-top: 1px solid #AAAAAA; 
+}
+.top-nav ul li a{
+	font-size: 1em;
+	color: #AAAAAA; 
+	text-decoration: none;
+	padding: .35em 1em;
+	display: block;
+	text-align: center;
+}
+.menu-icon a{
+	font-size: 1em;
+	color: #DDDDDA; 
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+	text-align: center;
+}
+.top-nav ul li a.current-page{
+	color: #333333;
+	font-weight: 600;
+}
+.top-nav ul li a.current-page:before {
+	color: #0089a7;
+	padding-right: 4px;
+	position: relative;
+	top: 1px;
+}
+.top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
+    background-color: rgba(170,170,170,0.6);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
+  	color: #FFFFFF;
+  	padding-right: 4px;
+  	position: relative;
+  	top: 1px;
+}
+/*implement menu toogle*/
+.top-nav.toggle-open ul{
+	display: block;
+}
+
+/*-----LOGO-----*/
+.logo{
+	background-color: #FFFFFF; 
+	margin-top: 10px;
+	text-align: center;
+	padding: 0;
+}
+.logo img{
+	height: 2.8em;
+}
+
+/*-----FOOTER-----*/
+footer{
+	padding-top: .75em;
+	text-align: center;
+}
+
+footer p{
+	font-size: .9em;
+	padding-bottom: .3em;
+}
+
+footer a{
+	font-size: 1.25em;
+	margin: .35em;
+}
+
+/*-----HOMEPAGE-----*/
+.main-content-home{
+	margin-top: 250px;
+}
+
+.home-banner{
+	color: #FFFFFF;
+	margin: auto;
+	padding: 0px 3em;
+	text-align: center;
+	line-height: 170%;
+	font-size: 90%;
+}
+
+.body-home{
+	background-image: url(../img/home_background.png);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;	
+}
+
+/*-----ABOUT PAGE ------*/
+
+/*-----IMAGES PAGE ------*/
+.main-content-crafts{
+	margin-top: 250px;
+}
+/*photo gallery*/
+.crafts{
+	display: block;
+	margin: auto;
+	max-width: 1200px;
+}
+.photo-cell{
+	margin-bottom: 2%;
+	margin-left: 2%;
+}
+.photo-cell img {
+	width: 98%;
+  	display: block;
+  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
