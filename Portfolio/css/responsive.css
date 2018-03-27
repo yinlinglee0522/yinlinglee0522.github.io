@@ -44,7 +44,7 @@
 
 @media only screen and (min-width: 750px) and (max-width: 1200px){
 
-	button, .dropdown-content {
+	.dropdown-button, .dropdown-content {
 		display: none;
 	}
 
@@ -96,7 +96,7 @@
 		width: 70%;
 	}
 
-	button, .dropdown-content {
+	.dropdown-button, .dropdown-content {
 		display: none;
 	}
 
