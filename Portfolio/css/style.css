@@ -167,6 +167,7 @@ footer a{
 
 .body-home{
 	background-image: url(../img/home_background.png);
+	background-color: #333333;
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;	
