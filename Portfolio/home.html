@@ -12,21 +12,26 @@
 </head>
 
 <body class="body body-home">
+	<a href="#main-content" class="skip">Skip navigation</a>
 	<header>
 		<div class="logo">
 			<a href="home.html"><img src="img/logo.png" alt="Erin's Logo"></a>
 		</div>
-		<nav id="top-nav" class="top-nav">
-			 <button class="dropbtn">Menu</button>
-  				<div class="dropdown-content">
+		<nav id="top-nav" class="top-nav"> 
+			<button class="dropdown-button"
+			 onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</button>
+  			<div id="myDropdown" class="dropdown-content">
 	  			<ul>
-				    <li><a class="current-page" href="home.html">HOME</a></li>
-				    <li><a href="project.html">PROJECT</a></li>
-				    <li><a href="graphic.html">GRAPHIC</a></li>
-				    <li><a href="about.html">ABOUT</a></li>
+					<li><a class="current-page" href="home.html">HOME</a></li>
+					<li><a href="project.html">PROJECT</a></li>
+					<li><a href="graphic.html">GRAPHIC</a></li>
+					<li><a href="about.html">ABOUT</a></li>
 				</ul> 
-			</div>
-			</div>  
+			</div> 
    		</nav>
 	</header>
 
@@ -44,6 +49,28 @@
 			<i class="fas fa-envelope" style="color:#333333" aria-hidden="true"></i></a>
 		<p>Designed by Erin Lee &copy; 2018</p>
 	</footer>
+
+	<script>
+		function myFunction(x) {
+    		x.classList.toggle("change");
+    		document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+  				if (!event.target.matches('.dropdown-button')) {
+
+    				var dropdowns = document.getElementsByClassName("dropdown-content");
+    				var i;
+    				for (i = 0; i < dropdowns.length; i++) {
+      					var openDropdown = dropdowns[i];
+      					if (openDropdown.classList.contains('show')) {
+        					openDropdown.classList.remove('show');
+    				}
+    			}
+  			}
+		}
+	</script>
 
 </body>
 </html>
