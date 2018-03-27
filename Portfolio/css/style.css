@@ -15,7 +15,7 @@ html, body{
 	height: 1px;
 	overflow: hidden;
 	z-index: -999;
-	color: #AAAAAA;
+	color: #999999;
 }
 a.skip:active, a.skip:focus, a.skip:hover {
     position:fixed;
@@ -97,7 +97,7 @@ header{
 
 .top-nav ul li a{
 	font-size: 1em;
-	color: #AAAAAA; 
+	color: #999999; 
 	text-decoration: none;
 	padding: .35em 1em;
 	display: block;
@@ -109,7 +109,7 @@ header{
 	font-weight: 600;
 }
 .top-nav ul li a.current-page:before {
-	color: #0089a7;
+	color: #333333;
 	padding-right: 4px;
 	position: relative;
 	top: 1px;
