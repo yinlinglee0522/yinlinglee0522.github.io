@@ -11,37 +11,20 @@
 
 	.dropdown-button {
 	    background-color: #FAFAFA;
-	    color: #333333;
 	    padding: 1em;
-	    font-size: 1em;
+	    font-size: 1.25em;
 	    border: none;
 	    display: inline-block;
 	    cursor: pointer;
 	}
-
-	.dropdown-bar1, .dropdown-bar2, .dropdown-bar3 {
-	    width: 25px;
-	    height: 2px;
-	    background-color: #333333;
-	    margin: 6px 0;
-	    transition: 0.4s;
+	.fa-times{
+		display:none;
 	}
-
-	/* Rotate first bar */
-	.change .dropdown-bar1 {
-	    -webkit-transform: rotate(-45deg) translate(-5px, 5.2px) ;
-	    transform: rotate(-45deg) translate(-5px, 5.2px) ;
+	.change .fa-bars{
+		display: none;
 	}
-
-	/* Fade out the second bar */
-	.change .dropdown-bar2 {
-	    opacity: 0;
-	}
-
-	/* Rotate last bar */
-	.change .dropdown-bar3 {
-	    -webkit-transform: rotate(45deg) translate(-6px, -7px) ;
-	    transform: rotate(45deg) translate(-6px, -7px) ;
+	.change .fa-times{
+		display: inline-block;
 	}
 
 	.dropdown-content {
