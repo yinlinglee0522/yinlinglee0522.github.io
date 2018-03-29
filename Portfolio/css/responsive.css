@@ -38,8 +38,7 @@
 	}
 
 	.show {display:block;}
-
-	}
+}
 
 
 @media only screen and (min-width: 750px) and (max-width: 1200px){
@@ -175,5 +174,4 @@
 		grid-row-start: 3;
 		box-sizing: border-box;
 	}
-
 }

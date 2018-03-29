@@ -41,7 +41,7 @@ body{
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
-	letter-spacing: 1px;
+	letter-spacing: .75px;
 }
 p{
 	font-family: 'Lato', sans-serif;
@@ -132,6 +132,7 @@ header{
 	text-align: center;
 	padding: 0;
 }
+
 .logo img{
 	height: 2.8em;
 }
@@ -152,7 +153,7 @@ footer a{
 	margin: .35em;
 }
 
-/*-----HOMEPAGE-----*/
+/*-----HOME PAGE-----*/
 .main-content-home{
 	margin-top: 240px;
 }
@@ -172,6 +173,26 @@ footer a{
 	background-repeat: no-repeat;	
 }
 
+/*-----GRAPHIC PAGE ------*/
+.main-content-graphic{
+	margin-top: 240px;
+}
+
+/*picture gallery*/
+.picture{
+	display: block;
+	max-width: 70%;
+	margin: auto;
+	padding-bottom: 5%;
+}
+.picture-cell{
+	margin-bottom: 4%;
+}
+.picture-cell img {
+	width: 95%;
+  	display: block;
+}
+
 /*-----ABOUT PAGE ------*/
 .headshot{
 	display: block;
@@ -187,27 +208,6 @@ footer a{
   background-position: 0 88%;
   transition: background-size 0.2s ease-in;
 }
-
 .underline-effect:hover {
     background-size: 100% 88%;
-}
-}
-
-/*-----GRAPHIC PAGE ------*/
-.main-content-graphic{
-	margin-top: 240px;
-}
-/*picture gallery*/
-.picture{
-	display: block;
-	max-width: 70%;
-	margin: auto;
-	padding-bottom: 5%;
-}
-.picture-cell{
-	margin-bottom: 4%;
-}
-.picture-cell img {
-	width: 95%;
-  	display: block;
 }
