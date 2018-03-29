@@ -166,7 +166,6 @@ footer a{
 }
 
 .body-home{
-	background-color: #333333;
 	background-image: url(../img/home_background.png);
 	background-size: cover;
 	background-position: center top;
@@ -194,11 +193,11 @@ footer a{
 }
 }
 
-/*-----PROJECT PAGE ------*/
-.main-content-crafts{
+/*-----GRAPHIC PAGE ------*/
+.main-content-graphic{
 	margin-top: 250px;
 }
-/*photo gallery*/
+/*picture gallery*/
 .crafts{
 	display: block;
 	margin: auto;
