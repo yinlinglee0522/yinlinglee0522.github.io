@@ -15,7 +15,7 @@ html, body{
 	height: 1px;
 	overflow: hidden;
 	z-index: -999;
-	color: #999999;
+	color: #9E9E9E;
 }
 a.skip:active, a.skip:focus, a.skip:hover {
     position:fixed;
@@ -97,7 +97,7 @@ header{
 
 .top-nav ul li a{
 	font-size: 1em;
-	color: #999999; 
+	color: #9E9E9E; 
 	text-decoration: none;
 	padding: .35em 1em;
 	display: block;
