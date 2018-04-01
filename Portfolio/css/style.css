@@ -159,7 +159,6 @@ footer a{
 }
 
 .home-text{
-	color: #FAFAFA;
 	margin: auto;
 	padding: 0px 3em;
 	text-align: center;
@@ -167,7 +166,7 @@ footer a{
 }
 
 .body-home{
-	background-image: url(../img/home_background.png);
+	background-image: url(../img/home_background.jpg);
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;	
