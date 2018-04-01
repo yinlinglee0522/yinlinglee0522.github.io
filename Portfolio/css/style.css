@@ -17,7 +17,7 @@ html, body{
 	z-index: -999;
 	color: #565656;
 }
-a.skip:active, a.skip:focus, a.skip:hover {
+a.skip:active, a.skip:focus, a.skip:hover{
     position:fixed;
     top: auto;
     left: auto; 
@@ -53,13 +53,13 @@ h1{
 	font-size: 2.15em;
 }
 h2{
-	font-size: 1.75em;
-}
-h3{
 	font-size: 1.5em;
 }
-h4{
+h3{
 	font-size: 1.25em;
+}
+h4{
+	font-size: 1em;
 }
 h5{
 	font-size: .83em;
@@ -69,7 +69,7 @@ h6{
 }
 .main-content{
 	flex: 1 0 auto;
-	margin-top: 110px;
+	margin-top: 130px;
 }
 
 .project-text, .graphic-text, .about-text{
@@ -108,7 +108,7 @@ header{
 	color: #333333;
 	font-weight: 600;
 }
-.top-nav ul li a.current-page:before {
+.top-nav ul li a.current-page:before{
 	color: #333333;
 	padding-right: 4px;
 	position: relative;
@@ -172,9 +172,13 @@ footer a{
 	background-repeat: no-repeat;	
 }
 
-/*-----GRAPHIC PAGE ------*/
-.main-content-graphic{
-	margin-top: 240px;
+/*-----PROJECT PAGE & GRAPHIC PAGE------*/
+.title{
+	text-align: center;
+}
+
+.description {
+	width: 95%;
 }
 
 /*picture gallery*/
@@ -187,7 +191,7 @@ footer a{
 .picture-cell{
 	margin-bottom: 4%;
 }
-.picture-cell img {
+.picture-cell img{
 	width: 95%;
   	display: block;
 }
@@ -195,18 +199,18 @@ footer a{
 /*-----ABOUT PAGE ------*/
 .headshot{
 	display: block;
-    width: 55%;
+    width: 70%;
     height: auto;
-    margin: 8% auto;
+    margin: auto;
 }
 
-.underline-effect {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.2s ease-in;
+.underline-effect{
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	background-repeat: no-repeat;
+	background-position: 0 90%;
+	background-size: 100% 0.2em;
+	transition: background-size 0.2s ease-in;
 }
-.underline-effect:hover {
-    background-size: 100% 88%;
+.underline-effect:hover{
+	background-size: 100% 90%;
 }
