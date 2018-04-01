@@ -48,6 +48,7 @@ p{
 	font-weight: 300;
 	letter-spacing: .3px;
 	font-size: 1em;
+	line-height: 150%;
 }
 h1{ 
 	font-size: 2.15em;
@@ -75,7 +76,10 @@ h6{
 .project-text, .graphic-text, .about-text{
 	margin: auto;
 	padding: 0px 15% 5% 15%;
-	line-height: 170%;
+}
+
+.project-text h1, .graphic-text h1, .about-text h1{
+	line-height: 150%;
 }
 
 /*-----HEADER & NAVIGATION-----*/
