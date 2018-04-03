@@ -162,6 +162,10 @@ footer a{
 	margin: .35em;
 }
 
+.fab, .fas {
+	color:#333333;
+}
+
 /*-----HOME PAGE-----*/
 .main-content-home{
 	margin-top: 240px;
