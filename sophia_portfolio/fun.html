@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sophia Chiu</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Main style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Google font -->
+  	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- Fontawesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>	
+	
+	<script>
+	$(document).ready(function(){
+      $('#nav-menu').on('click',() => {
+        $('#nav-list').toggle();
+        $('#nav-menu').toggleClass('active');
+      });
+
+    $("nav [href]").each(function() {
+	  if (this.href == window.location.href) {
+	    $(this).addClass("a-active");
+	    }
+      });
+    
+    }); 
+	</script>
+
+</head>
+<body>
+
+<header>
+	<div class="nav-bar">
+		<div class="brand">
+			<a href="index.html">SC</a>
+		</div>
+
+		<nav>
+			<button id="nav-menu">Menu</button>
+			<ul id="nav-list">
+		        <li><a href="index.html">Project</a></li>
+		        <li><a href="about.html">About</a></li>
+		        <li><a href="graphic.html">Visual</a></li>
+		        <li><a href="fun.html">Fun</a></li>
+		    </ul>
+		</nav>
+	</div>
+</header>
+
+
+<section class="hero-page">
+	<div class="title">
+	    <h1>Fun</h1>
+    </div>
+</section>
+
+<section id="fun">
+	<div class="fun-list">
+		<div>
+			<img src="images/fun1.jpg" class="img-responsive" alt="My trip in Korea">
+		</div>
+		<div class="funtext">
+			<h2>I travel to explore the world</h2>
+			<p>I have been to 13 countries and more than 34 cities. I love to make friends with people from diverse cultulres.</p>
+		</div>
+	</div>
+	<div class="fun-list">
+		<div class="fun-left">
+			<img src="images/fun2.jpg" class="img-responsive" alt="My trip in Korea">
+		</div>
+		<div class="funtext fun-right">
+			<h2>I cook for my love ones and myself</h2>
+			<p>Farfalle in marinara is my signature dish. But I also cook asian cuisine when I miss home.</p> 
+		</div>
+	</div>
+	<div class="fun-list">
+		<div>
+			<img src="images/fun3.jpg" class="img-responsive" alt="My trip in Korea">
+		</div>
+		<div class="funtext">
+			<h2>I love to take photoes along my journey</h2>
+			<p>So that I can keep all the good memories but only in my mind, but also in my instagram.</p>
+		</div>
+	</div>
+</section>
+
+
+<footer>
+	<p>Copyright &copy; Sophia Chiu</p>
+	<a href="https://www.facebook.com/sophia.chiu.9"><i class="fab fa-facebook-f"></i></a>
+	<a href="https://www.instagram.com/sophie8115/"><i class="fab fa-instagram"></i></a>
+	<a href="https://www.linkedin.com/in/sophiechiu/"><i class="fab fa-linkedin-in"></i></a>
+	<a href="mailto:chsophia@umich.edu"><i class="far fa-envelope"></i></a>
+</footer>
+
+</body>
+</html>
