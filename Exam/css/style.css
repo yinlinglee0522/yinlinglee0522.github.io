@@ -1,0 +1,9 @@
+.img1, .img2 {
+	box-sizing: border-box;
+	width: 50%;
+}
+
+.img2 {
+	display: block;
+	margin: 0 auto;
+}
