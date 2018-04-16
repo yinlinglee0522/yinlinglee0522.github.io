@@ -8,19 +8,27 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-		    $('.img1').show();  
-			$('.button').click(function(){
-	    		$('.img1').toggle();
+			$('.button1').click(function(){
+	    		$('.img1').hide();
+	    		$('.img2').css('margin', '0 auto');
+	    	});
+	    	$('.button2').click(function(){
+	    		$('.img1').show();
 	    	});
   		});
   	</script>
 </head>
 
 <body>
-	<h1>Final Exam</h1>
-	<button class="button" aria-label="Button" onclick="myFunction(this)">Click here to toggle the first image</button>
-	<img src="img/green.jpg" class="img1" alt="Green">
-	<img src="img/black.jpg" class="img2" alt="Black">
+	<h1>Erin Lee</h1>
+	<div class="picture">
+		<img src="images/examPic.JPG" class="img1" alt="Example Picture">
+		<img src="images/UMSI-logo.jpg" class="img2" alt="UMSI Logo">
+	</div>
+	<div class="button">
+		<button class="button1" aria-label="Button for Hiding">Hide Image</button>
+		<button class="button2" aria-label="Button for Showing">Show Image</button>
+	</div>
 </body>
 
 </html>
